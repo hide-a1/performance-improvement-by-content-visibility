@@ -25,4 +25,9 @@ export class ListComponent {
   ngOnInit(): void {
     this.renderStart.set(performance.now());
   }
+
+  change(position: number, event: any) {
+    const _event = event as ContentVisibilityAutoStateChangeEvent;
+    console.log({ position }, { skipped: _event.skipped });
+  }
 }
