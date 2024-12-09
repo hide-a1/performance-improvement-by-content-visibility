@@ -13,5 +13,5 @@ import { Data, getData } from '../../data';
 export class DetailComponent {
   data = input.required<Data>();
 
-  detailData = getData(2000);
+  detailData = getData(1000);
 }
